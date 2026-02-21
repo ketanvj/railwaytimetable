@@ -1,4 +1,5 @@
 var userListData = [];
+var trains = [];
 
 $(document).ready(function() {
 
