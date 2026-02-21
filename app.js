@@ -33,7 +33,7 @@ app.use('/trains', trainsRouter);
 //this endpoint performs cpu-intensive calculations
 app.get('/generate-cpu-load', function(req, res, next) {
   var val = 0.0001
-  for (i = 0; i < 1000000; i++) {
+  for (var i = 0; i < 1000000; i++) {
     val += Math.sqrt(val);
   }
   res.status(200).send('Doing a bunch of calculations!')
